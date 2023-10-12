@@ -11,7 +11,7 @@ const RecipeCard = ({ el }) => {
 const navigate = useNavigate()
   const handleFavouriteRecipe = () => {
     axios
-      .post("https://recipe-application-1fov.onrender.com/favourite", JSON.stringify(el), {
+      .post("https://recipeapp-web.onrender.com/favourite", JSON.stringify(el), {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
